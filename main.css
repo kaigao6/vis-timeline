@@ -8,7 +8,19 @@
     color: white;
     padding-top: 10px;
     padding-left: 10px;
+    border-left: 0px hsl(0, 0%, 50%) solid;
+    /* change to 1px to show left board next to text */
 }
+
+/* .vis-time-axis .vis-text.vis-major {
+    box-shadow: 0px 24px 1px 1px hsl(0, 0%, 50%);
+    border-left: 2px hsl(0, 0%, 50%) solid;
+
+} */
+/* .vis-time-axis .vis-text {
+     border-left: 2px hsl(0, 0%, 50%) solid;
+
+} */
 
 .vis-item {
     border-color: #28a745;
@@ -50,14 +62,23 @@
 }
 .vis-panel.vis-center {
     border-color: hsl(0, 0%, 50%);
+    /* border-top: 0px; */
+    /* to hide horizontal axis */
+
+    /* display: none; */
 }
 .vis-time-axis .vis-grid.vis-minor {
     border-width: 1px;
+    /* border-color: hsl(0, 0%, 50%); */
     border-color: hsl(0, 0%, 50%);
+    display: none;
+
 }
 .vis-time-axis .vis-grid.vis-major {
     border-width: 1.5px;
     /* border-color: gray; */
+    display: none;
+
   }
 
 
